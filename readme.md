@@ -115,10 +115,7 @@ For extending all configuration you can do:
 
 ```json
 {
-  "extends": [
-    "@stacklys/tsconfig/strict",
-    "@stacklys/tsconfig/dom"
-  ]
+  "extends": ["@stacklys/tsconfig/strict", "@stacklys/tsconfig/dom"]
 }
 ```
 
@@ -195,11 +192,7 @@ For dom configuration, extend the `@stacklys/tsconfig/dom` in your `tsconfig.jso
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "lib": [
-      "ESNext",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "jsx": "preserve"
   }
 }
