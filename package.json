@@ -1,46 +1,52 @@
 {
   "name": "@stacklys/tsconfig",
-  "version": "0.0.0",
-  "author": "Luis Monsalve",
-  "description": "📦 Strict, zero-waste, and modern TypeScript base configurations for typescript projects.",
+  "version": "1.0.0",
   "private": false,
+  "description": "📦 Strict, zero-waste, and modern TypeScript base configurations for typescript projects.",
+  "keywords": [
+    "stacklys",
+    "tsconfig",
+    "typescript"
+  ],
   "homepage": "https://github.com/Stacklys/tsconfig",
+  "bugs": {
+    "url": "https://github.com/Stacklys/tsconfig/issues"
+  },
+  "author": "Luis Monsalve",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Stacklys/tsconfig.git"
   },
-  "bugs": {
-    "url": "https://github.com/Stacklys/tsconfig/issues"
-  },
-  "keywords": [
-    "typescript",
-    "tsconfig",
-    "stacklys",
-    "typescript"
+  "files": [
+    "base.json",
+    "dom.json",
+    "strict.json"
   ],
+  "type": "module",
   "exports": {
     "./base": "./base.json",
     "./strict": "./strict.json",
-    "./react": "./react.json"
+    "./dom": "./dom.json"
   },
-  "files": [
-    "base.json",
-    "react.json",
-    "strict.json"
-  ],
-  "engine": {
-    "node": ">=22.17.0",
-    "bun": ">=1.1.0"
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
-    "preinstall": "npx only-allow bun",
-    "postinstall": "bunx gitlys init",
-    "lint": "eslint . --fix --cache",
+    "setup": "bunx gitlys init",
+    "lint": "oxlint --fix",
+    "format": "oxfmt",
     "security:audit": "bun audit",
-    "release": "bun run lint && bunx run gitlys"
+    "release": "bun run lint && bun run format && bunx run gitlys"
+  },
+  "dependencies": {
+    "@types/node": "^26.6.5"
   },
   "devDependencies": {
-    "eslint-config-universal-code": "^1.1.5",
-    "gitlys": "2.2.4"
+    "@stacklys/oxlint-config": "^1.0.4",
+    "gitlys": "^2.2.4"
+  },
+  "engine": {
+    "node": ">=22.17.0",
+    "bun": ">=1.4.2"
   }
 }
