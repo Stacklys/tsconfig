@@ -36,7 +36,7 @@
     "lint": "oxlint --fix",
     "format": "oxfmt",
     "security:audit": "bun audit",
-    "release": "bun run lint && bun run format && bunx run gitlys"
+    "release": "bun run lint && bun run format && bunx gitlys"
   },
   "dependencies": {
     "@types/node": "^26.6.5"
