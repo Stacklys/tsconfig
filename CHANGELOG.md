@@ -16,6 +16,11 @@ The list of changes have the description - commit - author.
 
 ## Released
 
+## 🚀 Version [1.0.2] - 2026-10-27
+
+- [[`4fed2e1`](https://github.com/Stacklys/tsconfig/commit/4fed2e1)] - **fix:** remove redundant types field from base.json by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`dc3636d`](https://github.com/Stacklys/tsconfig/commit/dc3636d)] - **fix:** remove unused dependencies from package.json by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+
 ## 🚀 Version [1.0.1] - 2026-10-27
 
 - [[`5ac670b`](https://github.com/Stacklys/tsconfig/commit/5ac670b)] - **fix:** update lintStaged configuration in .gitlys.json to use oxlint by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
