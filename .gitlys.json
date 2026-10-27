@@ -1,6 +1,6 @@
 {
   "lintStaged": {
-    "*.{ts,js,json,yml,yaml}": "bunx eslint --fix"
+    "*.{ts,js}": "bunx oxlint --fix"
   },
   "release": {
     "releaseToGithub": true
