@@ -38,9 +38,6 @@
     "security:audit": "bun audit",
     "release": "bun run lint && bun run format && bunx gitlys release"
   },
-  "dependencies": {
-    "@types/node": "^26.6.5"
-  },
   "devDependencies": {
     "@stacklys/oxlint-config": "^1.0.4",
     "gitlys": "^2.2.4"
