@@ -1,6 +1,6 @@
 {
   "name": "@stacklys/tsconfig",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "📦 Strict, zero-waste, and modern TypeScript base configurations for typescript projects.",
   "keywords": [
